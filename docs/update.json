@@ -1,11 +1,12 @@
 {
   "homepage": "https://gmogd125-cloud.github.io/dead-silence-pack/",
   "promos": {
-    "1.20.1-latest": "2.1.2",
-    "1.20.1-recommended": "2.1.2"
+    "1.20.1-latest": "2.2.0",
+    "1.20.1-recommended": "2.2.0"
   },
   "1.20.1": {
     "2.1.1": "Darkness fix: you can now see 12 blocks in the dark (was 5) and it is a little less black. Update notifier added.",
-    "2.1.2": "Brighter nights: you now see 48 blocks in the dark (radius 48, intensity 0.3). Change it in config/pitchdark-common.toml."
+    "2.1.2": "Brighter nights: you now see 48 blocks in the dark (radius 48, intensity 0.3). Change it in config/pitchdark-common.toml.",
+    "2.2.0": "Smarter mimics: SimpleMimics replaced by Dead Silence Mimics (unofficial fork, credit AkaneDev). Hunting mimic that disguises, approaches, transforms and attacks; voice recording now needs each player's opt-in (/mimicvoice on). Host-only AI button in the pause menu."
   }
 }

@@ -33,3 +33,6 @@
 Not included: The Box of Horrors (datapack errors, size), Always Listening (CurseForge only, needs Simple Voice Chat 2.4.11).
 SimpleMimics by AkaneDev.
 Forge 47.4.10 installer is fetched by ATLauncher. Java 17 is supplied by ATLauncher (Minecraft runtime).
+
+## 2.2.0
+SimpleMimics replaced by Dead Silence Mimics 1.0.0-ds.1, an unofficial fork of SimpleMimics by AkaneDev (https://github.com/AkaneDev/Simple_Mimics). Jar and source: release mimics-1.0.0-ds.1.
