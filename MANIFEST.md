@@ -44,3 +44,7 @@ Added Oculus 1.20.1-1.8.0 (Iris port for Forge, works with Embeddium 0.3.31) and
 
 ## 2.4.0
 Dead Silence Mimics 1.0.0-ds.2: bottom-right update notice (compares installed deadsilence_pack version with update.json). Not seen in a game client.
+
+
+## 2.5.0
+Added: DontCry 1.0.4, Whisperwoods 1.20.1-2.1.2 (+Architectury 9.2.14), The End of Herobrine 1.0.8.2, Face of Horror 3.3, Whispering Spirits 1.4.0. Dead Silence Mimics 1.0.0-ds.3. config/deadsilence_director.json. See MONSTERS.md.
