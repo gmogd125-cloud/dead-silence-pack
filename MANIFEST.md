@@ -1,4 +1,4 @@
-# DEAD SILENCE 2.1.1 - mod manifest (Minecraft 1.20.1, Forge 47.4.10, Java 17 via ATLauncher)
+# DEAD SILENCE 2.1.2 - mod manifest (Minecraft 1.20.1, Forge 47.4.10, Java 17 via ATLauncher)
 
 | # | Mod | Version | Channel | File | SHA-1 |
 |---|---|---|---|---|---|
