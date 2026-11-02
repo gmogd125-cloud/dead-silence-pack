@@ -40,3 +40,7 @@ SimpleMimics replaced by Dead Silence Mimics 1.0.0-ds.1, an unofficial fork of S
 
 ## 2.3.0
 Added Oculus 1.20.1-1.8.0 (Iris port for Forge, works with Embeddium 0.3.31) and Complementary Reimagined r5.9.3 shader pack (shaderpacks/, enabled by config/oculus.properties). Not tested in a game client; Pitch Dark Hardcore interaction unknown.
+
+
+## 2.4.0
+Dead Silence Mimics 1.0.0-ds.2: bottom-right update notice (compares installed deadsilence_pack version with update.json). Not seen in a game client.
