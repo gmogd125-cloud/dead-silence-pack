@@ -36,3 +36,7 @@ Forge 47.4.10 installer is fetched by ATLauncher. Java 17 is supplied by ATLaunc
 
 ## 2.2.0
 SimpleMimics replaced by Dead Silence Mimics 1.0.0-ds.1, an unofficial fork of SimpleMimics by AkaneDev (https://github.com/AkaneDev/Simple_Mimics). Jar and source: release mimics-1.0.0-ds.1.
+
+
+## 2.3.0
+Added Oculus 1.20.1-1.8.0 (Iris port for Forge, works with Embeddium 0.3.31) and Complementary Reimagined r5.9.3 shader pack (shaderpacks/, enabled by config/oculus.properties). Not tested in a game client; Pitch Dark Hardcore interaction unknown.
