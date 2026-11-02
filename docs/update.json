@@ -1,0 +1,10 @@
+{
+  "homepage": "https://gmogd125-cloud.github.io/dead-silence-pack/",
+  "promos": {
+    "1.20.1-latest": "2.1.1",
+    "1.20.1-recommended": "2.1.1"
+  },
+  "1.20.1": {
+    "2.1.1": "Darkness fix: you can now see 12 blocks in the dark (was 5) and it is a little less black. Update notifier added."
+  }
+}

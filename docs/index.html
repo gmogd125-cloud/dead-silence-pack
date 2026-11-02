@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEAD SILENCE</title>
+<style>
+  :root { --bg:#0b0b0d; --fg:#d8d8dc; --muted:#8a8a93; --accent:#c0392b; --card:#15151a; --line:#26262d; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f4f4f6; --fg:#1b1b1f; --muted:#5d5d66; --card:#fff; --line:#d9d9df; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { letter-spacing: .25em; font-size: 2rem; margin: 0 0 4px; }
+  .tag { color: var(--muted); margin: 0 0 28px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin: 0 0 20px; }
+  h2 { font-size: 1.1rem; margin: 0 0 10px; }
+  a.btn { display:inline-block; background: var(--accent); color:#fff; text-decoration:none; padding:12px 20px; border-radius:8px; font-weight:600; margin: 4px 8px 4px 0; }
+  a.alt { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+  code { background: rgba(127,127,127,.18); padding: 1px 6px; border-radius: 4px; }
+  ol, ul { padding-left: 22px; margin: 6px 0; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  #ver { font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DEAD SILENCE</h1>
+  <p class="tag">Multiplayer voice horror for Minecraft 1.20.1 (Forge). Monsters hear your microphone. Do not make a sound.</p>
+
+  <div class="card">
+    <h2>Download <span class="muted">latest: <span id="ver">…</span></span></h2>
+    <a class="btn" href="https://github.com/gmogd125-cloud/dead-silence-pack/releases/latest/download/DEAD_SILENCE.mrpack">Download DEAD_SILENCE.mrpack</a>
+    <a class="btn alt" href="https://github.com/gmogd125-cloud/dead-silence-pack/releases/latest/download/DEAD_SILENCE.zip">Same file as .zip</a>
+    <p class="muted">The file holds no mod files. ATLauncher downloads every mod from Modrinth when you import it.</p>
+  </div>
+
+  <div class="card">
+    <h2>Install (once)</h2>
+    <ol>
+      <li>Install <a href="https://atlauncher.com">ATLauncher</a> and sign in with your Minecraft account.</li>
+      <li>Instances tab, then <b>Import</b>, then choose the downloaded file. Do not unzip it.</li>
+      <li>Set the instance's memory to 6144 MB (8192 MB if you have 16 GB or more).</li>
+      <li>Play. Set your microphone in Options &gt; Voice Chat. The host opens a world with Essential and invites you.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Updates</h2>
+    <p>The pack contains a small marker mod. When a newer version is out, Minecraft's own update checker shows an <b>update available</b> notice
+    on the Mods button of the title screen and in the Mods list. To update: download the newest file from this page, import it in ATLauncher
+    as a new instance, and (if you want to keep a world) copy the old instance's <code>saves</code> folder over. Both players should be on the same version.</p>
+  </div>
+
+  <div class="card">
+    <h2>Voice recording</h2>
+    <p>Revervox, Mimicked and SimpleMimics record short clips of your voice so monsters can repeat them. By using this pack you agree to that.
+    Clips can be saved on the host's computer. Do not use the pack with people who have not agreed.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new</h2>
+    <p id="log" class="muted">Loading…</p>
+  </div>
+
+  <p class="muted">Mods belong to their authors. SimpleMimics by AkaneDev. Full list with versions and hashes:
+  <a href="https://github.com/gmogd125-cloud/dead-silence-pack/blob/main/MANIFEST.md">MANIFEST.md</a>.</p>
+</main>
+<script>
+fetch('update.json').then(r => r.json()).then(j => {
+  const v = j.promos['1.20.1-latest'];
+  document.getElementById('ver').textContent = v;
+  document.getElementById('log').textContent = (j['1.20.1'] || {})[v] || '';
+}).catch(() => { document.getElementById('ver').textContent = 'see Releases'; document.getElementById('log').textContent = ''; });
+</script>
+</body>
+</html>
